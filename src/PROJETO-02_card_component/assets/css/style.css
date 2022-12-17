@@ -1,12 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     max-width: 1440px;
-    min-width: 375px;
+    min-width: 360px;
     margin: 0 auto;
     padding: 0;
     background-color: hsl(30, 38%, 92%);
 }
 
 .container {
+    max-width: 100%;
     width: 60%;
     height: 600px;
     display: flex;
@@ -17,6 +22,7 @@ html {
 }
 
 .content-img {
+    max-width: 100%;
     width: 60%;
     margin: 0;
     
@@ -29,6 +35,7 @@ html {
 }
 
 .content {
+    max-width: 100%;
     width: 50%;
     padding: 35px;
     background-color: hsl(0, 0%, 100%);
@@ -97,4 +104,75 @@ html {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/* Layout Responsivo*/
+@media (max-width: 1000px){
+    .container {
+        width: 80%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 850px){
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px){
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px){
+
+    .container {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .content-img, .content {
+        width: 100%;
+    }
+
+    .content {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0;
+    }
+
+    .content h3 {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    #price {
+        font-size: 2.5rem;
+        margin: 10px 0;
+    }
+
+    #price-01 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        width: 80%;
+        height: 40px;
+        margin: 25px auto 0;
+    }
+
+    .btn p {
+        font-size: 1rem;
+    }
+
 }
