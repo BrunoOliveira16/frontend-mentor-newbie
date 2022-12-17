@@ -6,7 +6,7 @@ Projeto de desafio do frontend mentor para criação de um card componente de pr
 Designer 01
 ![Screenshot](../assets/images/desktop-preview-03.jpg)
 
-<h4 align="center"><a href="#">Clique aqui e visite o projeto</a></h4>
+<h4 align="center"><a href="https://brunooliveira16.github.io/frontend-mentor-newbie/src/PROJETO-02_card_component/index.html" target="_blank">Clique aqui e visite o projeto</a></h4>
 
 ## 📚 Descrição
 Seu desafio é criar esse componente de cartão de visualização do produto e deixá-lo o mais próximo possível do design.
