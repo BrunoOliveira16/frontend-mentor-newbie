@@ -4,7 +4,7 @@ Projeto de desafio do frontend mentor para criação de um card componente de pr
 ## 💻 Screenshot do projeto
 
 Designer 01
-![Screenshot](../assets/images/desktop-preview-01.jpg)
+![Screenshot](../assets/images/desktop-preview-03.jpg)
 
 <h4 align="center"><a href="#">Clique aqui e visite o projeto</a></h4>
 
