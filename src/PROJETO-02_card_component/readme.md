@@ -1,4 +1,4 @@
-## 📝 Desafio formulario-inscricao
+## 📝 Desafio Componente Card de Produto
 Projeto de desafio do frontend mentor para criação de um card componente de produto.
 
 ## 💻 Screenshot do projeto
