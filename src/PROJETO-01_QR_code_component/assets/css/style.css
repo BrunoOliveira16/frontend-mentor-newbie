@@ -9,6 +9,7 @@ html {
   background-color: rgb(215, 216, 216);
   max-width: 1440px;
   min-width: 375px;
+  margin: 0 auto;
 }
 
 body {
