@@ -107,6 +107,12 @@ html {
 }
 
 /* Layout Responsivo*/
+@media (max-width: 1200px){
+    .container {
+        height: 100%;
+    }
+}
+
 @media (max-width: 1000px){
     .container {
         width: 80%;
