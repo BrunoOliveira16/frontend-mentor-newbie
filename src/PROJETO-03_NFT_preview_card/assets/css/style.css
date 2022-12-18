@@ -1,9 +1,131 @@
 * {
     box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
 }
 
 html {
     max-width: 1440px;
     min-width: 360px;
+    margin: 100px auto;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    max-width: 100%;
+    width: 360px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+.image, .content-text, .creator {
+    margin: 25px;
+}
+
+.image {
+    height: 310px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.image:hover {
+    border-radius: 15px;
+    background-color: hsl(178, 100%, 50%);
+    height: 310px;
+}
+
+.image img:hover {
+    cursor: pointer;
+    filter: opacity(70%);
+}
+
+.content-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.content-text h1 {
+    width: 100%;
+    margin: 0 auto;
+    color: hsl(0, 0%, 100%);
+}
+
+strong, .content-text h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+p {
+    width: 100%;
+    color: hsl(215, 51%, 70%);
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price span {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+#clock, #eth {
+    display: flex;
+    align-items: center;
+}
+
+#clock {
+    justify-content: right;
+}
+
+#eth {
+    color: hsl(178, 100%, 50%);
+}
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.avatar {
+    margin: 0 15px 0 0;
+}
+
+.avatar img {
+    width: 50px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+strong {
+    color: hsl(0, 0%, 100%);
+}
+
+strong:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution { 
+    margin-top: 50px;
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution a { 
+    color: hsl(178, 100%, 50%); 
 }
