@@ -6,7 +6,7 @@ Projeto de desafio do frontend mentor para criação de um componente de card NF
 Designer 01
 ![Screenshot](../assets/images/desktop-preview-04.jpg)
 
-<h4 align="center"><a href="https://brunooliveira16.github.io/frontend-mentor-newbie/src/PROJETO-03_NFT_preview_card/" target="_blank">Clique aqui e visite o projeto</a></h4>
+<h4 align="center"><a href="https://brunooliveira16.github.io/frontend-mentor-newbie/src/PROJETO-03_NFT_preview_card/index.html" target="_blank">Clique aqui e visite o projeto</a></h4>
 
 ## 📚 Descrição
 Seu desafio é criar esse componente de cartão de visualização e deixá-lo o mais próximo possível do design.
