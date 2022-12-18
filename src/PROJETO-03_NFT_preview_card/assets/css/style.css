@@ -3,7 +3,7 @@
     font-family: 'Outfit', sans-serif;
 }
 
-html {
+body {
     max-width: 1440px;
     min-width: 360px;
     margin: 100px auto;
