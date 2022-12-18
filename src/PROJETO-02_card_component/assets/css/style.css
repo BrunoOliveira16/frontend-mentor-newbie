@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-html {
+body {
     max-width: 1440px;
     min-width: 360px;
     margin: 0 auto;
@@ -16,14 +16,13 @@ html {
     height: 600px;
     display: flex;
     flex-direction: row;
-    margin: 100px auto;
-    border-radius: 15px;
+    margin: 5.5rem auto;
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 
 .content-img {
-    max-width: 100%;
-    width: 60%;
+    width: 50%;
     margin: 0;
     
 }
@@ -37,7 +36,7 @@ html {
 .content {
     max-width: 100%;
     width: 50%;
-    padding: 35px;
+    padding: 3rem;
     background-color: hsl(0, 0%, 100%);
 }
 
@@ -59,7 +58,7 @@ html {
     justify-content: center;
     align-items: center;
     background-color: hsl(158, 36%, 37%);
-    border-radius: 10px;
+    border-radius: 1rem;
     height: 60px;
     transition: 0.3s;
 }
@@ -82,7 +81,7 @@ html {
     color: hsl(228, 12%, 48%);
     font-size: 1.5rem;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 2rem;
     font-weight: 100;
 }
 
@@ -90,15 +89,15 @@ html {
     color: hsl(0, 0%, 100%);
     margin: 0;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .btn img {
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 1.1rem; 
     text-align: center; 
 }
 
@@ -138,7 +137,7 @@ html {
         flex-direction: column;
         width: 95%;
         height: auto;
-        margin: 20px auto;
+        margin: 2rem auto;
     }
 
     .content-img, .content {
@@ -146,15 +145,15 @@ html {
     }
 
     .content {
-        padding: 30px;
+        padding: 2.8rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     .content h1 {
-        font-size: 2.2rem;
-        margin-bottom: 0;
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
     .content h3 {
@@ -162,9 +161,15 @@ html {
         margin: 0;
     }
 
+    .content p {
+        font-size: 1rem;
+        line-height: 2rem;
+        margin: 0;
+    }
+
     #price {
         font-size: 2.5rem;
-        margin: 10px 0;
+        margin: 1rem 0;
     }
 
     #price-01 {
@@ -172,13 +177,13 @@ html {
     }
 
     .btn {
-        width: 80%;
-        height: 40px;
-        margin: 25px auto 0;
+        width: 85%;
+        height: 50px;
+        margin: 2rem auto 0;
     }
 
     .btn p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
 }

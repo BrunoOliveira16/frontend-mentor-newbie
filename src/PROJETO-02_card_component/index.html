@@ -12,9 +12,10 @@
 </head>
 <body>
     <main class="container">
-        <figure class="content-img">
-            <img src="./assets/images/image-product-desktop.jpg" alt="product image">
-        </figure>
+        <picture class="content-img">
+            <source media="(max-width:480px)" srcset="./assets/images/image-product-mobile.jpg">
+            <img srcset="./assets/images/image-product-desktop.jpg" alt="product image">
+        </picture>
         <div class="content">
             <h3>P E R F U M E</h3>
             <h1>Gabrielle Essence Eau De Parfum</h1>
