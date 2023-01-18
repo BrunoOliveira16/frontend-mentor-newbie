@@ -1,11 +1,11 @@
 ## 📝 Desafio Front-end Mentor Newbie
 Portifólio com os projetos de desafio do frontend mentor de nível newbie.
 
-<h4><a href="https://brunooliveira16.github.io/frontend-mentor-newbie/">Link do Projeto</a></h4>
+<h4 align="center"><a href="https://brunooliveira16.github.io/frontend-mentor-newbie/">Link do Projeto</a></h4>
 
 ## 💻 Screenshot do projeto
 
-- Designer 01
+![screenshot](./src/assets/images/desktop-preview-main.jpg)
 
 ## 📚 Descrição
 
