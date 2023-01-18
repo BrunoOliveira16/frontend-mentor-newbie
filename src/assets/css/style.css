@@ -137,3 +137,16 @@ footer {
     opacity: 0.5;
     color: black;
 }
+
+@media screen and (max-width: 426px) {
+    .container-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        margin: 50px 0;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
