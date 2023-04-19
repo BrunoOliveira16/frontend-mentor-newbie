@@ -49,8 +49,8 @@
     position: relative;
 }
 
-.card__container--wrapper h3 {
-    font-size: var(--h3-font-size);
+.card__container--wrapper h2 {
+    font-size: var(--h2-font-size);
 }
 
 .card__container--wrapper:nth-child(1) {
