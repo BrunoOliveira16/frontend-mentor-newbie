@@ -1,152 +1,140 @@
-html {
-    box-sizing: content-box;
-    max-width: 1440px;
-    min-width: 360px;
-    margin: 0 auto;
-}
+@import url(./global.css);
 
-body, main, header {
-    width: 100%;
-    margin: 0 auto;
-}
-
-header {
-    padding: 30px;
+.header {
+    padding: 1.8rem;
     border-bottom: 1px solid gray;
-    margin-bottom: 50px;
+    margin-bottom: 1.5rem;
 }
 
-main {
+.container {
     text-align: left;
-    padding: 0 20px;
+    padding-inline: 1.25rem;
 }
 
-img {
-    max-width: 100%;
+.container__title {
+    font-size: var(--h1-font-size);
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 1rem;
 }
 
-a {
-    text-decoration: none !important;
-    --bs-link-color:: transparent;
+.container__subtitle {
+    font-size: var(--normal-font-size);
+    line-height: 1.7rem;
+    font-weight: 300;
 }
 
-h1 {
-    color: rgb(62, 84, 163);
-}
-
-.container-card {
-    display: grid;
-    grid-template-columns: repeat(3, 3fr);
-    gap: 1.5rem;
-    margin: 50px 0;
+.container__card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem auto;
 }
 
 .card {
     position: relative;
-    width: 100%;
+    width: 30%;
+    min-width: 360px;
     height: 100%;
+    border-radius: 1.2rem;
+}
+
+.card__img--wrapper {
+    width: 100%;
     overflow: hidden;
-    
 }
 
-.card-image {
-    margin-bottom: 10px;
+.card__img {
+    height: 240px;
     width: 100%;
-    height: 300px;
-}
-
-.card-image img {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    display: block;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-    transition: 0.3s ease 0s;
+    vertical-align: middle;
+    transition: all 0.6s var(--transition);
 }
 
-.card-image img:hover {
-	transform: scale(1.1);
-} 
+.card:hover .card__img {
+    transform: scale(1.3);
+}
 
 
-.card-content {
+.card__content {
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
-    text-align: justify;
+    gap: 1.2rem;
+    padding: 1.5rem;
 }
 
-.card-content h3 {
-    text-align: left;
-    font-size: 1.5rem;
+.card__content h2 {
+    font-size: var(--h2-font-size);
+    font-weight: 500;
 }
 
-.html {
-    color: red;
+.card__content p {
+    font-size: var(--normal-font-size);
+    font-weight: 300;
 }
 
-.css {
-    color: blue;
+.card__content--tag span {
+    margin-right: 1rem;
+    font-weight: 700;
 }
 
-.js {
-    color: gold;
-}
-
-.card-content-link {
+.card__content--link {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     gap: 1rem;
 }
 
-.card-content-link a {
-    width: 100%;
-    background-color: black;
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none;
+.card__content--link a {
+    width: 45%;
+    background-color: var(--title-color);
+    color: var(--bg-color);
+    font-size: var(--normal-font-size);
     text-align: center;
-    padding: 5px 0;
+    padding: .5rem 0;
 }
 
-.card-content-link a:hover {
+.card__content--link a:hover {
     cursor: pointer;
     opacity: 0.8;
 }
 
-footer {
-    text-align: center;
-    background-color: rgb(62, 84, 163);
-    color: white;
-    padding: 30px 50px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+.footer {
+    background-color: var(--title-color);
+    color: var(--bg-color);
+    padding: 2rem 3rem;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: center;
     justify-content: space-around;
 }
 
-.icons svg {
-    margin: 0 10px;
-    transition: 0.5s ease 0s;
+.footer__icons i {
+    color: var(--bg-color);
+    font-size: var(--h1-font-size);
+    margin-inline: 1rem;
+    transition: all 0.6s var(--transition);
 }
 
-.icons svg:hover {
+.footer__icons i:hover {
     opacity: 0.5;
     color: black;
 }
 
 @media screen and (max-width: 426px) {
-    .container-card {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1.5rem;
-        margin: 50px 0;
+    .container {
+        text-align: center;
     }
 
-    footer {
+    .footer {
         flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__icons {
+        margin-top: 1rem;
     }
 }

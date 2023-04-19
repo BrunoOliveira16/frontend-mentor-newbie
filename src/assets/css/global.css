@@ -1,0 +1,97 @@
+/* ================================================= */
+/*                   GOOGLE FONTS                    */
+/* ================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+
+/* ================================================= */
+/*                    VARIAVEIS CSS                  */
+/* ================================================= */
+
+:root {
+    /* ================== Cores ================== */
+    --bg-color: #FFFFFF;
+    --bg-second-color: #000000;
+    --title-color: rgb(62, 84, 163);
+    --html-color: #E34C26;
+    --css-color: #1572B6;
+    --js-color: #F0DB4F;
+    --border-color: hsl(210, 2%, 65%);
+    --container-color: hsl(210, 2%, 94%);
+
+    /* ================ Tipografia ================ */
+    --primary-font: 'Roboto', sans-serif;
+
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1.25rem;
+
+    /* ================ Transition ================ */
+    --transition: cubic-bezier(0.3, 0, 0.3, 1);
+
+    /* ==============+ Sombreamento =============== */
+    --shadow: 5px 5px rgb(0 0 0 /20%);
+}
+
+/* ================================================= */
+/*                    RESET CSS                      */
+/* ================================================= */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--primary-font);
+}
+
+body {
+    max-width: 1440px;
+    min-width: 360px;
+    margin: auto;
+}
+
+body,
+main,
+header {
+    width: 100%;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+ }
+
+/* ================================================= */
+/*           CLASSES CSS REUTILIZÁVEIS               */
+/* ================================================= */
+
+.text-cs {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.card {
+    border: 2px solid var(--container-color);
+    overflow: hidden;
+    text-align: left;
+}
+
+.html {
+    color: var(--html-color);
+}
+
+.css {
+    color: var(--css-color);
+}
+
+.js {
+    color: var(--js-color);
+}

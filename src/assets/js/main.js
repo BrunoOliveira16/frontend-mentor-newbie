@@ -8,14 +8,14 @@ const createProjectCard = (project) => {
 
     return `
         <div class="card">
-            <div class="card-image">
-                <img src=${project.image} alt=${project.name}>
+            <div class="card__img--wrapper">
+                <img src=${project.image} alt=${project.name} class="card__img">
             </div>
-            <div class="card-content">
-                <h3>${project.name}</h3>
-                <h3>${tagsHtml}</h3>
+            <div class="card__content">
+                <h2>${project.name}</h2>
+                <h2 class="card__content--tag">${tagsHtml}</h2>
                 <p>${project.description}</p>
-                <div class="card-content-link">
+                <div class="card__content--link">
                     <a href=${project.url_demo} target="_blank" rel="noopener">Ir para o Site</a>
                     <a href=${project.url_github} target="_blank" rel="noopener">Repositório</a>
                 </div>

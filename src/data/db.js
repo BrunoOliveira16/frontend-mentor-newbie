@@ -50,7 +50,7 @@ export default {
                     name: "CSS"
                 },
              ],
-            description: "Projeto de desafio do frontend mentor para criação de um componente card de produto, respeitando o layout fornecido.",
+            description: "Projeto de desafio do frontend mentor para criação de um componente card de produto, centralizado na tela, respeitando o layout fornecido.",
             url_github: "https://github.com/BrunoOliveira16/frontend-mentor-newbie/tree/main/src/Projects/project-02-card-component",
             url_demo: "./src/Projects/project-02-card-component/index.html"
         },
