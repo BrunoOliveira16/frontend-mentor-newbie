@@ -1,0 +1,103 @@
+@import url(./global.css);
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/pattern-background-mobile.svg) no-repeat 100% 100% / cover;
+    background-color: var(--bg-color);
+}
+
+.card {
+    width: 340px;
+    height: auto;
+    padding-bottom: 1.5rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow);
+    object-fit: cover;
+}
+
+.card__content--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    text-align: center;
+}
+
+.card__content--subtitle {
+    padding: 0 2rem;
+}
+
+.card__img--wrapper {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.card__container, .card__button {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 8px;
+}
+
+.card__container {
+    padding: 1rem;
+    background-color: var(--bg-component-color-alt);
+    position: relative;
+}
+
+.card__container--wrapper h3 {
+    font-size: var(--h3-font-size);
+}
+
+.card__container--wrapper:nth-child(1) {
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.card__container--wrapper:nth-child(3) {
+    position: absolute;
+    right: 5%;
+    top: 33%;
+}
+
+.card__button {
+    background-color: var(--bg-component-color);
+    color: var(--bg-color);
+    box-shadow: var(--shadow);
+    padding: .8rem 0;
+    transition: all .5s var(--transition);
+}
+
+.card__button:hover {
+    cursor: pointer;
+    filter: contrast(1.8);
+}
+
+.card__link {
+    text-align: center;
+    font-weight: 900;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* =========== Responsividade =========== */
+
+@media screen and (min-width: 800px) {
+    .container {
+        background: url(../images/pattern-background-desktop.svg) no-repeat top / contain;
+        background-color: var(--bg-color);
+    }
+
+    .card {
+        width: 450px;
+    }
+
+    .card__content--wrapper {
+        padding: 0 2rem;
+    }
+}
