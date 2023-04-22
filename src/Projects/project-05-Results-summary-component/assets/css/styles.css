@@ -4,6 +4,7 @@
 /* =================== Cores =================== */
 /* ================ Tipografia ================ */
 /* ================ Transições ================ */
+/* =============== Sombreamento =============== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -65,7 +66,7 @@
   text-align: center;
   color: hsl(241, 100%, 89%);
 }
-.card__result__circle {
+.card__result__score {
   width: 150px;
   height: 150px;
   margin: 0 auto;
@@ -76,11 +77,11 @@
   align-items: center;
   justify-content: center;
 }
-.card__result__circle--title {
+.card__result__score--title {
   font-size: 3.5rem;
   color: hsl(0, 0%, 100%);
 }
-.card__result__circle--text {
+.card__result__score--text {
   font-size: 0.875rem;
   color: hsl(241, 100%, 89%);
   line-height: 1.2rem;
@@ -90,7 +91,7 @@
   color: hsl(0, 0%, 100%);
   text-align: center;
 }
-.card__result--text {
+.card__result--description {
   font-size: 0.875rem;
   color: hsl(241, 100%, 89%);
   line-height: 1.2rem;
@@ -114,7 +115,7 @@
   font-size: 1.2rem;
   color: hsl(224, 30%, 27%);
 }
-.card__summary--btn {
+.card__summary--button {
   padding-block: 1rem;
   border: none;
   border-radius: 2rem;
@@ -124,7 +125,7 @@
   width: 100%;
   transition: all 1s ease;
 }
-.card__summary--btn:hover {
+.card__summary--button:hover {
   cursor: pointer;
   background-image: linear-gradient(to top, hsl(224, 30%, 27%), hsla(224, 30%, 27%, 0.5));
 }
