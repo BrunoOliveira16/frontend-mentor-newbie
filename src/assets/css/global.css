@@ -16,6 +16,7 @@
     --html-color: #E34C26;
     --css-color: #1572B6;
     --js-color: #F0DB4F;
+    --sass-color: #B37399;
     --border-color: hsl(210, 2%, 65%);
     --container-color: hsl(210, 2%, 94%);
 
@@ -94,4 +95,8 @@ button {
 
 .js {
     color: var(--js-color);
+}
+
+.sass {
+    color: var(--sass-color);
 }
