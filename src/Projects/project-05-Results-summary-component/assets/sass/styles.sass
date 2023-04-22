@@ -10,24 +10,40 @@
 
 .container
     width: 100vw
+    min-width: 360px
     height: 100vh
     background-color: variables.$bg-primary-color
     @include mixins.center
+    align-items: center
+
+    @media screen and (max-width: 618px)
+        width: 100%
+        height: auto
 
 .card__container
     width: 600px
-    height: 400px
+    height: auto
     display: flex
     background-color: variables.$bg-second-color
-    border-radius: 1.5rem
+    border-radius: 2rem
+    box-shadow: variables.$shadow
+
+    @media screen and (max-width: 618px) 
+        width: 100%
+        @include mixins.center-block
 
 .card__result
     width: 50%
     padding: 1.7rem
-    gap: 1rem
-    @include mixins.center-block
-    border-radius: 1.5rem
+    gap: 1.5rem
+    @include mixins.column
+    border-radius: 2rem
     background-image: variables.$primary-gradient
+
+    @media screen and (max-width: 618px)
+        width: 100%
+        border-top-left-radius: 0
+        border-top-right-radius: 0
 
     &--title
         font-size: variables.$normal-font-size
@@ -37,9 +53,11 @@
     &__circle
         width: 150px
         height: 150px
+        margin: 0 auto
         border-radius: 50%
         background-image: variables.$second-gradient
         @include mixins.center-block
+        justify-content: center
 
         &--title
             font-size: variables.$large-font-size
@@ -51,6 +69,7 @@
     &--subtitle
         font-size: variables.$medium-font-size
         color: variables.$bg-second-color
+        text-align: center
 
     &--text
         @include mixins.small-text
@@ -59,3 +78,65 @@
 
 .card__summary
     width: 50%
+    padding: 1.7rem
+    gap: 1.5rem
+    @include mixins.column
+
+    @media screen and (max-width: 618px)
+        width: 100%
+
+    &--title
+        font-size: variables.$normal-font-size
+        color: variables.$bg-dark-color
+    
+    &--btn
+        @include mixins.btn
+        width: 100%
+        transition: all 1s ease
+
+        &:hover
+            cursor: pointer
+            background-image: variables.$thirdy-gradient
+    
+    &__content
+        @include mixins.column
+        gap: 1rem
+
+        &--item
+            width: 100%
+            height: 3rem
+            padding-inline: 1rem
+            @include mixins.space-between
+            border-radius: .8rem
+
+.type
+    display: flex
+    flex-direction: row
+    gap: .5rem
+    font-weight: 700
+
+.result
+    color: variables.$bg-dark-color
+    font-weight: 700
+    span
+        color: variables.$span-color
+
+#reaction
+    background-color: variables.$transparent-red-color
+    .type p
+        color: variables.$primary-red-color
+
+#memory
+    background-color: variables.$transparent-yellow-color
+    .type p
+        color: variables.$primary-yellow-color
+
+#verbal
+    background-color: variables.$transparent-green-color
+    .type p
+        color: variables.$primary-green-color
+
+#visual
+    background-color: variables.$transparent-blue-color
+    .type p
+        color: variables.$primary-blue-color

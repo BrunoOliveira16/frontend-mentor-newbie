@@ -3,15 +3,31 @@
 @mixin center
     display: flex
     justify-content: center
-    align-items: center
 
 @mixin center-block
     display: flex
     flex-direction: column
-    justify-content: center
     align-items: center
+
+@mixin column
+    display: flex
+    flex-direction: column
+
+@mixin space-between
+    display: flex
+    justify-content: space-between
+    align-items: center
+    
 
 @mixin small-text
     font-size: variables.$small-font-size
     color: variables.$title-color
     line-height: variables.$normal-font-size
+
+@mixin btn
+    padding-block: 1rem
+    border: none
+    border-radius: 2rem
+    text-align: center
+    background-image: variables.$primary-gradient
+    color: variables.$bg-primary-color
