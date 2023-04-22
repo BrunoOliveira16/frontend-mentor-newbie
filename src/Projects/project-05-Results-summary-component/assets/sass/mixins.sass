@@ -1,0 +1,17 @@
+@use './variables'
+
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin center-block
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+@mixin small-text
+    font-size: variables.$small-font-size
+    color: variables.$title-color
+    line-height: variables.$normal-font-size

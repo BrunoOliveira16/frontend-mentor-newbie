@@ -1,0 +1,80 @@
+/* ================ Google Fonts ================ */
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+/* =================== Cores =================== */
+/* ================ Tipografia ================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(221, 100%, 96%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__container {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.5rem;
+}
+
+.card__result {
+  width: 50%;
+  padding: 1.7rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+.card__result--title {
+  font-size: 1.2rem;
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+}
+.card__result__circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__result__circle--title {
+  font-size: 3.5rem;
+  color: hsl(0, 0%, 100%);
+}
+.card__result__circle--text {
+  font-size: 0.875rem;
+  color: hsl(241, 100%, 89%);
+  line-height: 1.2rem;
+}
+.card__result--subtitle {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
+.card__result--text {
+  font-size: 0.875rem;
+  color: hsl(241, 100%, 89%);
+  line-height: 1.2rem;
+  text-align: center;
+  padding-inline: 1.2rem;
+}
+
+.card__summary {
+  width: 50%;
+}
+
+/*# sourceMappingURL=styles.css.map */

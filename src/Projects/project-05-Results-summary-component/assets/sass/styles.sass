@@ -1,0 +1,61 @@
+@use './variables'
+@use './mixins'
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: variables.$primary-font-family
+
+
+.container
+    width: 100vw
+    height: 100vh
+    background-color: variables.$bg-primary-color
+    @include mixins.center
+
+.card__container
+    width: 600px
+    height: 400px
+    display: flex
+    background-color: variables.$bg-second-color
+    border-radius: 1.5rem
+
+.card__result
+    width: 50%
+    padding: 1.7rem
+    gap: 1rem
+    @include mixins.center-block
+    border-radius: 1.5rem
+    background-image: variables.$primary-gradient
+
+    &--title
+        font-size: variables.$normal-font-size
+        text-align: center
+        color: variables.$title-color
+    
+    &__circle
+        width: 150px
+        height: 150px
+        border-radius: 50%
+        background-image: variables.$second-gradient
+        @include mixins.center-block
+
+        &--title
+            font-size: variables.$large-font-size
+            color: variables.$bg-second-color
+
+        &--text
+            @include mixins.small-text
+    
+    &--subtitle
+        font-size: variables.$medium-font-size
+        color: variables.$bg-second-color
+
+    &--text
+        @include mixins.small-text
+        text-align: center
+        padding-inline: 1.2rem
+
+.card__summary
+    width: 50%
